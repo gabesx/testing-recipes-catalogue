@@ -2,9 +2,7 @@
 
 [![Contributions Welcome!](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
 
-> A curated collection of publicly available resources on how software companies around the world test their software systems and build their quality culture.
-
-A curated collection of practical testing techniques, strategies, and best practices. Find step-by-step testing recipes for functional, performance, security, and automation testing. Ideal for testers and developers looking to enhance software quality with actionable insights. 🚀
+> A curated collection of practical testing techniques, strategies, and best practices. Find step-by-step testing recipes for functional, performance, security, and automation testing. Ideal for testers and developers looking to enhance software quality with actionable insights. 🚀
 
 ## Foreword
 
@@ -34,7 +32,8 @@ Testing / quality of software goes beyond traditional activities of pre-release 
 
 ## Companies & how they test their software
 
-### [Allofresh](https://allofresh.com)
+<details>
+<summary><b>Allofresh</b> - Food Delivery Platform</summary>
 
 #### Overview
 Allofresh is a food delivery platform that connects users with various food vendors. Our testing strategy focuses on ensuring reliable API services, smooth mobile app experience, and comprehensive manual testing.
@@ -120,6 +119,7 @@ patrolTest('Recipe flow test', ($) async {
 - [API Testing Guide](docs/allofresh/api-testing.md)
 - [Mobile Testing Guide](docs/allofresh/mobile-testing.md)
 - [Manual Testing Guide](docs/allofresh/manual-testing.md)
+</details>
 
 ## Contributors
 
