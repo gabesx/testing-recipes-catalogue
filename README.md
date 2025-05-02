@@ -51,8 +51,30 @@ AlloFresh is an online grocery shopping platform managed by PT Allo Fresh Indone
 
 #### Testing Stack
 - **API Testing**: Ruby + RSpec
+  - Custom test framework for API validation
+  - Integration with CI/CD pipeline
+  - Automated test reporting
+
 - **Mobile Testing**: Flutter + Patrol
-- **Manual Testing**: Jira/In House TcMS powered by QARATMS
+  - Cross-platform test automation
+  - Native device interaction testing
+  - Performance monitoring
+
+- **Manual Testing**: Jira/In House TcMS powered by QaraTMS
+  - Open-source test management system based on [QaraTMS](https://github.com/a13xh7/QaraTMS)
+  - Features:
+    - Test repository management
+    - Test suite organization
+    - Test case versioning
+    - Test plan creation and execution
+    - Test run tracking
+    - Documentation module
+    - Project-based organization
+    - Role-based access control
+  - Integration with Jira for bug tracking
+  - Test execution tracking and reporting
+  - Test environment management
+  - Test data management
 
 #### Testing Approach
 
@@ -61,31 +83,65 @@ AlloFresh is an online grocery shopping platform managed by PT Allo Fresh Indone
 - RSpec for BDD-style test writing
 - HTTParty/RestClient for API requests
 - Comprehensive test coverage for all endpoints
+- Automated test data setup and cleanup
+- Environment-specific test configurations
+- Performance testing integration
+- Security testing scenarios
 
 ##### Mobile App Testing
 - Flutter-based mobile testing
 - Patrol framework for native device interactions
 - Cross-platform testing (iOS & Android)
 - Offline functionality testing
-```
+- Push notification testing
+- Deep linking validation
+- App state management testing
+- Performance and memory testing
+- Device-specific test scenarios
 
 ##### Manual Testing
-- Structured test case management in Jira/TestRail
-- Regular smoke testing after deployments
-- Comprehensive regression testing before releases
-- Exploratory testing for edge cases
-- User acceptance testing with stakeholders
+- Structured test case management in QaraTMS
+- Test repository organization by project modules
+- Test suite and test case management
+- Test plan creation and execution
+- Test run tracking and reporting
+- Bug tracking integration with Jira
+- Test environment management
+- Test data management
+- Test case version control
+- Test execution metrics
 
 #### Quality Processes
-- Daily test execution in CI/CD pipeline
-- Weekly test case reviews
-- Monthly test strategy updates
-- Quarterly quality metrics review
+- **Test Planning**
+  - Feature-based test planning
+  - Test case design and review
+  - Test environment setup
+  - Test data preparation
+
+- **Test Execution**
+  - Daily smoke testing
+  - Feature-specific test execution
+  - Regression testing
+  - Performance testing
+  - Security testing
+
+- **Test Management**
+  - Test case version control
+  - Test execution tracking
+  - Bug tracking and management
+  - Test metrics collection
+  - Quality reporting
+
+- **Continuous Improvement**
+  - Weekly test case reviews
+  - Monthly test strategy updates
+  - Quarterly quality metrics review
+  - Test process optimization
 
 #### Tools & Infrastructure
 - Test Environment: dev, staging, production
 - CI/CD: GitHub Actions
-- Test Management: Jira/TestRail
+- Test Management: Jira/In House TcMS powered by QaraTMS
 - Monitoring: New Relic, Sentry
 
 #### Best Practices
