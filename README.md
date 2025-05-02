@@ -33,16 +33,26 @@ Testing / quality of software goes beyond traditional activities of pre-release 
 ## Companies & how they test their software
 
 <details>
-<summary><b>Allofresh</b> - Food Delivery Platform</summary>
+<summary><b>AlloFresh</b> - Online Grocery Shopping Platform</summary>
 
 #### Overview
-Allofresh is a food delivery platform that connects users with various food vendors. Our testing strategy focuses on ensuring reliable API services, smooth mobile app experience, and comprehensive manual testing.
+AlloFresh is an online grocery shopping platform managed by PT Allo Fresh Indonesia. The platform provides daily necessities including food, beverages, personal care products, and household items. AlloFresh is accessible through mobile applications available on Play Store and App Store, offering quick delivery services (as fast as 30 minutes for certain products) across various cities in Indonesia.
+
+#### Company Background
+- **Parent Company**: PT Allo Fresh Indonesia
+- **Partnership**: Collaboration between Trans Retail Indonesia (CT Corp business unit), Bukalapak, and Growtheum Capital Partners
+- **Presence**: Multiple cities in Indonesia including Malang, Surabaya, Makassar, and Palembang
+
+#### Key Features
+- Online grocery shopping platform
+- Mobile applications (iOS & Android)
+- Comprehensive product range
+- Quick delivery service (2-hour or 30-minute options)
 
 #### Testing Stack
 - **API Testing**: Ruby + RSpec
 - **Mobile Testing**: Flutter + Patrol
-- **Manual Testing**: Jira/TestRail
-- **E2E Testing**: Cypress
+- **Manual Testing**: Jira/In House TcMS powered by QARATMS
 
 #### Testing Approach
 
@@ -51,30 +61,12 @@ Allofresh is a food delivery platform that connects users with various food vend
 - RSpec for BDD-style test writing
 - HTTParty/RestClient for API requests
 - Comprehensive test coverage for all endpoints
-- Example:
-```ruby
-RSpec.describe 'Recipes API' do
-  it 'returns list of recipes' do
-    response = HTTParty.get('http://api.allofresh.com/v1/recipes')
-    expect(response.code).to eq(200)
-    expect(JSON.parse(response.body)).to include('recipes')
-  end
-end
-```
 
 ##### Mobile App Testing
 - Flutter-based mobile testing
 - Patrol framework for native device interactions
 - Cross-platform testing (iOS & Android)
 - Offline functionality testing
-- Example:
-```dart
-patrolTest('Recipe flow test', ($) async {
-  await $.pumpWidget(MyApp());
-  await $(TextField).enterText('Pasta');
-  await $(IconButton).tap();
-  expect($(Text).containing('Pasta Recipes'), findsOneWidget);
-});
 ```
 
 ##### Manual Testing
